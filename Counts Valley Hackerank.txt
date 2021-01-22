@@ -37,6 +37,4 @@ print(valley)
 
 __      __
   \    /    == this is one valley startin from level 0 to having last n[i] =="u"
-
-
    \/\/
