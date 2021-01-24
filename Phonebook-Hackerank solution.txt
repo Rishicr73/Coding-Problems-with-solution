@@ -1,0 +1,21 @@
+#n,Enter number , and empty dictionary
+n = int(input())
+phonebook = {}
+for i in range (0,n):
+    name,number = input().split()
+    #print(name,number)  
+    #here we have take split()becoz to separate name and number
+   #n,Enter number , and empty dictionary
+ 
+    #here we have take split()becoz to separate name and number
+    phonebook[name]=number
+    
+while True:
+    try:
+        name = input()  
+        if name in phonebook:
+            print(f"{name}={phonebook[name]}")  
+        else:
+            print("Not found")    
+    except :
+        break
