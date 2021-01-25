@@ -1,0 +1,21 @@
+def plusminus(arr) :
+    p_count = 0
+    n_count = 0
+    o_count = 0
+    for i in arr:
+        if i > 0:
+            p_count += 1
+        elif i < 0:
+            n_count += 1
+        elif i == 0:
+            o_count += 1
+    print(p_count/len(arr))  
+    print(n_count/len(arr))  
+    print(o_count/len(arr))
+    
+if __name__ == '__main__':
+    n = int(input())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    plusminus(arr) 
