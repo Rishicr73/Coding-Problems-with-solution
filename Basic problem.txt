@@ -1,0 +1,22 @@
+#Given an array of integer ,return indices of the two number
+such they add up to a specific target .You may asume that each 
+input would have exactly one solution , and you may not use
+the sameelement twice.
+Give nums = [2,7,11,15] , target = 9
+beacuse num[0] +num[1] = 2+7 = 9
+return [0,1]
+
+
+ANS:
+
+nums = list(map(int , input().split()))
+target = int(input())
+i = 0
+j = len(nums) - 1
+while i < j:
+    if nums[i] + nums[j] == target :
+        print(i , j)
+    if nums[i] + nums[j] > target:
+        j -= 1
+    else :
+        i += 1    
