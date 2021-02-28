@@ -12,8 +12,8 @@ def pickingNumbers(a):
     for i in range(1 , 100):
         max_ = max(max_, c[i] + c[i-1])
     return max_    
-            
-
+     #WE ned to select two adjacent numbers like(1 , 2 ) and return their count from array if there are more pair of adjacent number then we ned to select their maximum count.      
+     #If not understood ask ajay sir .
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
