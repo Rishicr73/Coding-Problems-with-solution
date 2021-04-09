@@ -13,9 +13,8 @@ nums = [1, 4, 1, 7, 1, 7, 1, 1]
 <details>
 <summary>Expand</summary>
 #### Python :point_down:
-```py
-  class Solution:
-    def solve(self, nums):
+ ```
+ def solve(self, nums):
         d = {}
         for i in nums:
             if i not in d:
@@ -25,21 +24,11 @@ nums = [1, 4, 1, 7, 1, 7, 1, 1]
         maxi = 0
         for key in d:
             maxi = max(maxi, d[key])
-        return(maxi) 
-```
-#### Python :point_down:
-```py
-  class Solution:
-    def solve(self, nums):
-        if nums == []:
-            return 0
-        t = set(nums)
-        l= []
-        for i in t:
-            s = nums.count(i)
-            l.append(s)
-        return max(l)   
-```  
+        return(maxi)
+ ```
+ 
+  
+  
 </details>
 
 #### Solve Here :point_down:
